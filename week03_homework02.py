@@ -5,6 +5,7 @@ from pymongo import MongoClient
 client=MongoClient('localhost',27017)
 db=client.dbhomework
 
+#headers 질문 언제 넣어야 하는지?
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
 data = requests.get('https://www.genie.co.kr/chart/top200?ditc=D&rtm=N&ymd=20200713', headers=headers)
